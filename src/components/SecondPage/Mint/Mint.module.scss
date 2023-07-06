@@ -1,0 +1,149 @@
+.mint{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mint_modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 760px;
+    // height: 100px;
+    border-width: 10px;
+    border-radius: 5px;
+    background-position: center center;
+    border-color: #7affcd;
+    border-style: dotted;
+    box-shadow: 0px 0px 29px 0px rgba(196,196,196,1);
+}
+
+.mint_title{
+    color: #7affcd;
+    font-size: 42px;
+    font-family: 'Source Code Pro',Arial,sans-serif;
+    line-height: 1.55;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.mint_desc{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Source Code Pro',Arial,sans-serif;
+    line-height: 1.2;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.mint_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.mint_minus_plus{
+    font-size: 26px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: #ffffff;
+}
+
+.mint_input{
+    font-family: "Source Code Pro";
+    box-sizing: border-box;
+    line-height: 1.33;
+    padding: 0 20px;
+    margin: 0;
+    outline: none;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    border-top: 0!important;
+    border-right: 0!important;
+    border-left: 0!important;
+    background-color: transparent!important;
+    border-radius: 0!important;
+    width: 70px;
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 25px;
+    font-weight: 400;
+    height: 56px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.mint_button{
+    color: #182420;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: Source Code Pro;
+    cursor: pointer;
+    background-color: #7affcd;
+    transition: 0.3s ease all;
+    padding: 0px 15px;
+    display: block;
+    width: 155px;
+    font-weight: 700;
+    height: 56px;
+    border:none;
+    &:hover{
+        background-color: #ffffff;
+    }
+}
+
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Для Firefox */
+    appearance: textfield; /* Для остальных браузеров */
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .mint_modal {
+      width: 80%; 
+    }
+    
+    .mint_title {
+      font-size: 32px; 
+    }
+    
+    .mint_desc {
+      font-size: 20px; 
+    }
+    
+    .mint_bottom {
+      flex-direction: column; 
+      margin-top: 1.5rem; 
+      margin-bottom: 1.5rem;
+    }
+    
+    .mint_minus_plus {
+      font-size: 22px; 
+      margin: 0.2rem;
+    }
+    
+    .mint_input {
+      font-size: 18px; 
+      width: 50px;
+      height: 40px; 
+    }
+    
+    .mint_button {
+      width: 100%; 
+      margin-top: 1.5rem; 
+    }
+  }
